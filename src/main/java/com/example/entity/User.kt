@@ -10,12 +10,9 @@ import javax.persistence.Table
  */
 @Entity
 @Table(name = "user")
-class User() {
+data class User(
   @Id
   @GeneratedValue
-  var id: Long = 0
-
-  var name: String = ""
-
-  var sex: String = ""
-}
+  val id: Long = 0,
+  val name: String = "",
+  val sex: String = "")
